@@ -12,4 +12,10 @@ Feature: Login test
      And I should see "SETTINGS"
      And I should see "MODULES"
      
+     Scenario: sample 2
+     When I click general 
+     Then should expand 
+     And I should see "SETTINGS"
+     And I should see "MODULES"
+     
      
