@@ -1,0 +1,125 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "check login",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2548070417,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open website \"https://www.phptravels.net/admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.phptravels.net/admin",
+                  "offset": 16
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_open_website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5918447294,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login as admin",
+            "match": {
+              "location": "LoginFeature.login()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3011383897,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "sample",
+        "description": "",
+        "id": "login-test;sample",
+        "after": [
+          {
+            "result": {
+              "duration": 121229682,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I click general",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "should expand",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I should see \"SETTINGS\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I should see \"MODULES\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login test",
+    "description": "",
+    "id": "login-test",
+    "keyword": "Feature",
+    "uri": "features/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@login"
+      }
+    ]
+  }
+]

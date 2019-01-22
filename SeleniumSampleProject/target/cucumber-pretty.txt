@@ -1,0 +1,12 @@
+@login
+Feature: Login test
+
+  Background: check login                                   # features/Login.feature:5
+    Given I open website "https://www.phptravels.net/admin" # Cucumber1_stepDefs.i_open_website(String)
+    And I login as admin                                    # LoginFeature.login()
+
+  Scenario: sample              # features/Login.feature:9
+    When I click general
+    Then should expand
+    And I should see "SETTINGS"
+    And I should see "MODULES"

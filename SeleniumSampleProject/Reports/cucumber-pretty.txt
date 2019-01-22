@@ -1,0 +1,26 @@
+@smoke
+Feature: check Google
+
+  Scenario: test google                                       # features/Cucumber1.feature:5
+    Given I open google website "https://www.google.co.uk""   # Cucumber1_stepDefs.i_open_google_website(String)
+    When I enter keyword "selenium"                           # Cucumber1_stepDefs.i_enter_keyword(String)
+    Then I should see results with "selenium - Google Search" # Cucumber1_stepDefs.i_should_see_results_with(String)
+
+  Scenario Outline: test multiple data                      # features/Cucumber1.feature:11
+    Given I open google website "https://www.google.co.uk""
+    When I enter keyword "<keyword>"
+    Then I should see results with "<expectedresult>"
+
+    Examples: 
+
+  @smoke
+  Scenario Outline: test multiple data                        # features/Cucumber1.feature:19
+    Given I open google website "https://www.google.co.uk""   # Cucumber1_stepDefs.i_open_google_website(String)
+    When I enter keyword "selenium"                           # Cucumber1_stepDefs.i_enter_keyword(String)
+    Then I should see results with "selenium - Google Search" # Cucumber1_stepDefs.i_should_see_results_with(String)
+
+  @smoke
+  Scenario Outline: test multiple data                          # features/Cucumber1.feature:20
+    Given I open google website "https://www.google.co.uk""     # Cucumber1_stepDefs.i_open_google_website(String)
+    When I enter keyword "protractor"                           # Cucumber1_stepDefs.i_enter_keyword(String)
+    Then I should see results with "protractor - Google Search" # Cucumber1_stepDefs.i_should_see_results_with(String)

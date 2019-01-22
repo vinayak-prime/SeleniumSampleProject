@@ -1,0 +1,300 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1692849709,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "test google",
+        "description": "",
+        "id": "check-google;test-google",
+        "after": [
+          {
+            "result": {
+              "duration": 88112437,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1069425526,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open google website \"https://www.google.co.uk\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.google.co.uk",
+                  "offset": 23
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_open_google_website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1602640906,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter keyword \"selenium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "selenium",
+                  "offset": 17
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_enter_keyword(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7732801,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see results with \"selenium - Google Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "selenium - Google Search",
+                  "offset": 27
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_should_see_results_with(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 947548018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "test multiple data",
+        "description": "",
+        "id": "check-google;test-multiple-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 82566642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 938379327,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I open google website \"https://www.google.co.uk\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.google.co.uk",
+                  "offset": 23
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_open_google_website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1580438907,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter keyword \"selenium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "selenium",
+                  "offset": 17
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_enter_keyword(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4200436,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see results with \"selenium - Google Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "selenium - Google Search",
+                  "offset": 27
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_should_see_results_with(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 922497351,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "test multiple data",
+        "description": "",
+        "id": "check-google;test-multiple-data;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 84791886,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 571144027,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I open google website \"https://www.google.co.uk\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.google.co.uk",
+                  "offset": 23
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_open_google_website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1304986338,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter keyword \"protractor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "protractor",
+                  "offset": 17
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_enter_keyword(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3932254,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see results with \"protractor - Google Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "protractor - Google Search",
+                  "offset": 27
+                }
+              ],
+              "location": "Cucumber1_stepDefs.i_should_see_results_with(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "check Google",
+    "description": "",
+    "id": "check-google",
+    "keyword": "Feature",
+    "uri": "features/Cucumber1.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@smoke"
+      }
+    ]
+  }
+]
