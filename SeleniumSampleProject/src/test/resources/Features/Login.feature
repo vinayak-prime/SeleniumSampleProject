@@ -13,7 +13,7 @@ Feature: Login test
      And I should see "MODULES"
      
      Scenario: sample 2
-     When I click general 
+     When I click general settings
      Then should expand 
      And I should see "SETTINGS"
      And I should see "MODULES"
