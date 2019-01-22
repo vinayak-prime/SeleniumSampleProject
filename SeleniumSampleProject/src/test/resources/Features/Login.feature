@@ -14,6 +14,7 @@ Feature: Login test
      
      Scenario: sample 2
      When I click general settings
+     When I click settings
      Then should expand 
      And I should see "SETTINGS"
      And I should see "MODULES"
