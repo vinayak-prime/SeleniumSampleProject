@@ -9,20 +9,24 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import bsh.org.objectweb.asm.Constants;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import excelutils.ExcelReader;
+
 import page_objects.*;
 
  public class LoginFeature {
 	 
 	public WebDriver driver;
-	public Login_POM page;
+	public SamplePageObjects page;
+	public static ExcelReader TestData = new ExcelReader("./testdata/SampleData.xlsx");
 	
-	public LoginFeature() {
+	public LoginFeature(WebDriver driver) {
 		this.driver = Hooks.driver;
-		page = new Login_POM(driver);
+		page = new SamplePageObjects(driver);
 	}
 	
 	@Given("I login as admin$")
@@ -39,14 +43,14 @@ import page_objects.*;
 		
 		
 		 driver.findElement(By.name("email")).clear();
-	     driver.findElement(By.name("email")).sendKeys(arg1);
+	     driver.findElement(By.name("email")).sendKeys(TestData.getData("LeadSubmissionData", 1, 1));
 	}
 
 	@Given("^I enter password \"([^\"]*)\"$")
 	public void i_enter_password(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		 driver.findElement(By.name("password")).clear();
-		 driver.findElement(By.name("password")).sendKeys(arg1);
+		 driver.findElement(By.name("password")).sendKeys(TestData.getData("LeadSubmissionData", 1, 1));
 	}
 
 	@When("^I click login button$")

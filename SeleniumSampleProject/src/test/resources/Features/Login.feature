@@ -6,17 +6,19 @@ Feature: Login test
      Given I open website "https://www.phptravels.net/admin"
      And I login as admin
      
-   Scenario: sample
-     When I click general 
-     Then should expand 
-     And I should see "SETTINGS"
-     And I should see "MODULES"
+   Scenario: update profile - read data from excel 
+     When I click Profile 
+     And I update profile data 
+     Then I should see success message "CHANGES SAVED!"
      
-     Scenario: sample 2
-     When I click general settings
-     When I click settings
-     Then should expand 
-     And I should see "SETTINGS"
-     And I should see "MODULES"
+    Scenario: update profile - read data from excel 
+     When I click Profile 
+     And I update profile data 
+     Then I should see success message "CHANGES SAVED!"
      
+     
+    Scenario: update profile - read data from excel 
+     When I click Profile 
+     And I update profile data 
+     Then I should see success message "CHANGES SAVED!"
      
